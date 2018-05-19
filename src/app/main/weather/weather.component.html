@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <!-- Week weather -->
+    <div *ngIf="weather.week[0]">
+        <div *ngFor="let date of weather.week" class="week-weather-day-wrapper material-card hover">
+            {{date[0].date | displayDay | titlecase}}
+            <br><br>
+            <div *ngFor="let one of date">
+                {{one.date | displayTime}}:
+                {{one.temp}} *C; {{one.clouds}}
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!weather.week"> Loading week weather... </div>
+</div>

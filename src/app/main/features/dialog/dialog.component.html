@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Новое уведомление</h1>
+<div mat-dialog-content>
+  <p>Текст уведомления</p>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="data.output.text"></textarea>
+  </mat-form-field>
+  <p>Дата уведомления</p>
+  <mat-form-field>
+    <input matInput type="datetime-local" [(ngModel)]="data.output.date">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions class="buttons-wrapper">
+  <button mat-button [disableRipple]="true" (click)="onNoClick()">Cancel</button>
+  <button mat-button [disableRipple]="true" (click)="onOkClick()" cdkFocusInitial>Ok</button> <!-- [mat-dialog-close]="data.output" -->
+</div>

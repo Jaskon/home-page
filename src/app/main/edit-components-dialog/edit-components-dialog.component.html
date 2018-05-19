@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Компоненты</h1>
+<div mat-dialog-content>
+  <div *ngFor="let component of data.components; let i = index" class="component material-card hover">
+    <!-- Delete button -->
+    <div class="fas-buttons">
+      <i class="fas-button fas fa-times" (click)="deleteComponent(i)"></i>
+    </div>
+
+    <span *ngIf="component.name">{{ component.name }}</span>
+    <span *ngIf="!component.name">Component {{i+1}}</span>
+  </div>
+
+  <div class="components-buttons-wrapper">
+    <button class="add-button" mat-button color="primary"
+        (click)="chooseComponent = !chooseComponent">Добавить</button>
+    <button class="add-button" mat-button color="primary"
+        (click)="addComponentFromFile()">Из файла</button>
+
+    <!-- Predefined components list -->
+    <div *ngIf="chooseComponent">
+      <button mat-button *ngFor="let component of globals.predefinedComponents" class="add-button"
+          (click)="addPredefinedComponent(component)">
+        {{ component.name }}
+      </button>
+    </div>
+  </div>
+
+</div>
+<div mat-dialog-actions class="buttons-wrapper">
+  <button mat-button [disableRipple]="true" (click)="onNoClick()">Cancel</button>
+  <button mat-button [disableRipple]="true" (click)="onOkClick()" cdkFocusInitial>Ok</button> <!-- [mat-dialog-close]="data.output" -->
+</div>
+
+<!-- Hidden file input to click it from code -->
+<input id="fileInput" type="file" style="display: none">

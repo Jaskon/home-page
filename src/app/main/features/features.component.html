@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <div>
+        <button class="add-button" mat-button color="primary"
+                (click)="addNotificationGUI()">Добавить</button><!-- [disableRipple]="true" -->
+    </div>
+
+    <div *ngFor="let notification of notifications">
+        <div class="notification material-card hover">
+            <!-- Buttons -->
+            <div class="fas-buttons">
+                <i class="fas-button fas fa-edit" (click)="editNotificationGUI(notification)"></i>
+                <i class="fas-button fas fa-times" (click)="deleteNotification(notification)"></i>
+            </div>
+
+            <!-- Body -->
+            <span *ngIf="notification.text" class="notification-text">{{notification.text}}<br></span>
+            {{notification.date | displayDate}}
+        </div>
+    </div>
+</div>

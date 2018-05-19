@@ -1,0 +1,44 @@
+.header-wrapper {
+    align-items: center;
+    display: flex;
+    height: 74px;
+    //justify-content: flex-end;
+    justify-content: space-around;
+    margin: 8px 8px 12px 8px;
+    padding: 0 16px;
+    width: calc(100% - 16px - 32px);
+}
+
+.edit-components-button {
+    min-width: 40px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+}
+
+.header-element {
+    //margin: 0 30px;
+}
+
+// Search
+.search-wrapper {
+    flex-grow: 0.2;
+    margin-left: 20px;
+    //margin-right: auto;
+    text-align: center;
+}
+
+.search-input-wrapper {
+    width: 100%;
+}
+
+// Current weather
+.current-weather-wrapper {
+    text-align: center;
+    padding: 0 6px;
+}
+
+// Datetime
+.current-datetime {
+
+}

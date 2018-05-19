@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <!-- Tile content -->
+    <div *ngIf="tutby">
+        <div *ngFor="let item of tutby.items" class="item material-card hover">
+            <a class="item-link" href={{item.link}} target="_blank">
+                <div class="item-title">{{ item.title }}</div>
+                <div class="item-description" [innerHTML]=item.description></div>
+            </a>
+        </div>
+    </div>
+</div>

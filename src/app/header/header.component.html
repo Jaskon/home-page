@@ -1,0 +1,28 @@
+<div class="header-wrapper material-card">
+
+    <!-- Search -->
+    <div *ngIf="globals.screenSize === screenType.Desktop" class="header-element search-wrapper">
+        <mat-form-field class="search-input-wrapper">
+            <input matInput type="text" placeholder="Поиск" (keyup.enter)="searchInputEnterPressed($event)">
+        </mat-form-field>
+    </div>
+
+    <!-- Current weather -->
+    <div class="header-element current-weather-wrapper">
+        <div>Погода сейчас:</div>
+        <div *ngIf="weather.current.temp">
+            {{city.name}}: {{weather.current.temp}} *C, {{weather.current.clouds}}
+        </div>
+        <div *ngIf="!weather.current.temp"> Loading current weather... </div>
+    </div>
+
+    <!-- Datetime -->
+    <div *ngIf="globals.screenSize !== screenType.Mobile" class="header-element current-datetime">
+        {{ date | displayDatetime | titlecase }}
+    </div>
+
+    <!-- Edit components button -->
+    <button class="edit-components-button" mat-button color="primary"
+                (click)="editComponentsButtonClicked()">Q</button>
+
+</div>

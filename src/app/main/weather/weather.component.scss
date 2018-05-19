@@ -1,0 +1,14 @@
+.wrapper {
+    padding: 10px;
+}
+
+.week-weather-day-wrapper {
+    margin: 10px 0;
+    padding: 6px;
+}
+.week-weather-day-wrapper:first-child {
+    margin-top: 0;
+}
+.week-weather-day-wrapper:last-child {
+    margin-bottom: 10px;
+}

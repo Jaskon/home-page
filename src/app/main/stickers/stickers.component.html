@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div>
+        <button class="add-button" mat-button color="primary"
+                (click)="addStickerGUI()">Добавить</button><!-- [disableRipple]="true" -->
+    </div>
+
+    <div *ngFor="let sticker of stickers">
+        <div class="sticker material-card hover">
+            <!-- Buttons -->
+            <div class="fas-buttons">
+                <i class="fas-button fas fa-edit" (click)="editStickerGUI(sticker)"></i>
+                <i class="fas-button fas fa-times" (click)="deleteSticker(sticker)"></i>
+            </div>
+
+            <!-- Body -->
+            <span *ngIf="sticker.title" class="sticker-title">
+                {{sticker.title}}
+                <br>
+            </span>
+            <span class="sticker-text">{{sticker.text}}</span>
+        </div>
+    </div>
+</div>

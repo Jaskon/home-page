@@ -1,0 +1,26 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.wrapper {
+    padding: 10px;
+}
+
+$add-button-background-color: rgb(63, 81, 181);
+
+.add-button {
+    background-color: rgba($add-button-background-color, .0);
+    width: 100%;
+}
+
+.sticker {
+    margin: 12px 0 12px 0;
+    padding: 6px;
+    position: relative;
+}
+
+.sticker-title {
+    font-weight: bold;
+}
+
+.sticker-text {
+    white-space: pre-wrap;
+}

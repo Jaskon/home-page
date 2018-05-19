@@ -1,0 +1,45 @@
+<mat-tab-group headerPosition="below">
+    <!-- Tabs -->
+    <mat-tab *ngFor="let tab of tabs; let iTab = index" label="{{tab.name}}">
+
+        <mat-grid-list cols="{{globals.componentsPerTab}}" rowHeight="fit" class="container">
+            <!-- Columns inside the tab -->
+            <mat-grid-tile *ngFor="let component of tab.components; let iComp = index"
+                    colspan="1"
+                    rowspan="1"
+                    class="mat-grid-tile">
+                <div class="tile-wrapper">
+
+
+                    <!-- Tile / Custom component -->
+                    <div [ngSwitch]="component.htmlContent">
+
+                        <!-- Predefined components -->
+                        <div *ngSwitchCase="'<app-news></app-news>'">
+                            <app-news></app-news>
+                        </div>
+
+                        <div *ngSwitchCase="'<app-weather></app-weather>'">
+                            <app-weather></app-weather>
+                        </div>
+
+                        <div *ngSwitchCase="'<app-stickers></app-stickers>'">
+                            <app-stickers></app-stickers>
+                        </div>
+
+                        <div *ngSwitchCase="'<app-features></app-features>'">
+                            <app-features></app-features>
+                        </div>
+
+                        <!-- Custom components -->
+                        <div *ngSwitchDefault id="{{'customComponent' + (iTab * globals.componentsPerTab + iComp)}}" [innerHtml]="component.htmlContent | safeHtml"></div>
+
+                    </div>
+
+
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+
+    </mat-tab>
+</mat-tab-group>

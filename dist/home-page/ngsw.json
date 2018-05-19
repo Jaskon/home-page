@@ -1,0 +1,114 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.b02749cc84b644f222bb.js",
+        "/polyfills.0a9cba8319a28701b315.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.ad19bd4bc3a181ae022f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/css/fa-solid.min.css",
+        "/assets/css/fontawesome.min.css",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/webfonts/fa-brands-400.eot",
+        "/assets/webfonts/fa-brands-400.svg",
+        "/assets/webfonts/fa-brands-400.ttf",
+        "/assets/webfonts/fa-brands-400.woff",
+        "/assets/webfonts/fa-brands-400.woff2",
+        "/assets/webfonts/fa-regular-400.eot",
+        "/assets/webfonts/fa-regular-400.svg",
+        "/assets/webfonts/fa-regular-400.ttf",
+        "/assets/webfonts/fa-regular-400.woff",
+        "/assets/webfonts/fa-regular-400.woff2",
+        "/assets/webfonts/fa-solid-900.eot",
+        "/assets/webfonts/fa-solid-900.svg",
+        "/assets/webfonts/fa-solid-900.ttf",
+        "/assets/webfonts/fa-solid-900.woff",
+        "/assets/webfonts/fa-solid-900.woff2"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "requests",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": [
+        "\\/.*"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/css/fa-solid.min.css": "df0193b331a0a569638c9b4fa70af07a06a81f07",
+    "/assets/css/fontawesome.min.css": "c90831bc25928f86158948ab1ec2f3c559ac64e8",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/webfonts/fa-brands-400.eot": "5508e831737e6f25ab3799f6f7a9bfd587864337",
+    "/assets/webfonts/fa-brands-400.svg": "b11720321a30b10778c53611ac55a68071a558c6",
+    "/assets/webfonts/fa-brands-400.ttf": "917640899da9f9a7b663c523d89442045cebdac6",
+    "/assets/webfonts/fa-brands-400.woff": "7bdf19962618acc3b46e0795444f8d57b9e9d0ea",
+    "/assets/webfonts/fa-brands-400.woff2": "36edef484776634579f5e472b32597c9bbc30840",
+    "/assets/webfonts/fa-regular-400.eot": "e763e8043ec70664b2b3ca53968e612cfe3ff2d6",
+    "/assets/webfonts/fa-regular-400.svg": "75ffcd532b2c32f73e7a0042d3b37fd285ab2373",
+    "/assets/webfonts/fa-regular-400.ttf": "cc813db1a7d88fd10ab760d84d681ca6aa20c3fe",
+    "/assets/webfonts/fa-regular-400.woff": "f6f3e711fe18616cf97ad5756fbc129d2a5280cc",
+    "/assets/webfonts/fa-regular-400.woff2": "313e54eafeb9d666b4a5d56f063c1b445210d18a",
+    "/assets/webfonts/fa-solid-900.eot": "dba6739783feb2ca03a4c0292c56cb3e69141c8a",
+    "/assets/webfonts/fa-solid-900.svg": "72d7455e77257154eb8b7f0be1f8188eca43ec40",
+    "/assets/webfonts/fa-solid-900.ttf": "e115dab669d8c01c52df7ff38c8dfef300f9f120",
+    "/assets/webfonts/fa-solid-900.woff": "0e9fb2297000d5f9854ae44a0dbf1328bb2036c8",
+    "/assets/webfonts/fa-solid-900.woff2": "a3700932cac3f05cc351a8275362e4a1e2933cd3",
+    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/index.html": "0373e6cd9e03c790bcd77b96e6fe9dcdff1b09da",
+    "/main.b02749cc84b644f222bb.js": "66004f5769a319b4927443e524c0aaa9722b01e1",
+    "/polyfills.0a9cba8319a28701b315.js": "2548ae81006927ef075d70c63477c4ace08dd03a",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.ad19bd4bc3a181ae022f.css": "6208137635cf04c43d7b362187b4d1a20b2067fd"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
