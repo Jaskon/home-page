@@ -18,7 +18,7 @@
     },
     {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
         "/assets/css/fa-solid.min.css",
@@ -87,7 +87,7 @@
     "/assets/webfonts/fa-solid-900.woff": "0e9fb2297000d5f9854ae44a0dbf1328bb2036c8",
     "/assets/webfonts/fa-solid-900.woff2": "a3700932cac3f05cc351a8275362e4a1e2933cd3",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "0373e6cd9e03c790bcd77b96e6fe9dcdff1b09da",
+    "/index.html": "1430f02edbced405537b616428bb24e158f5f077",
     "/main.b02749cc84b644f222bb.js": "66004f5769a319b4927443e524c0aaa9722b01e1",
     "/polyfills.0a9cba8319a28701b315.js": "2548ae81006927ef075d70c63477c4ace08dd03a",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
